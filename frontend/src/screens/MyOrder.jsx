@@ -5,7 +5,7 @@ export default function MyOrder() {
     const [orderData, setorderData] = useState({})
 
     const fetchMyOrder = async () => {
-        await fetch("http://localhost:4000/api/v1/myOrderData", {
+        await fetch("https://quick-bite-backend.vercel.app/api/v1/myOrderData", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -7,7 +7,7 @@ export default function Login() {
   let navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/api/v1/loginuser", {
+    const response = await fetch("https://quick-bite-backend.vercel.app/api/v1/loginuser", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

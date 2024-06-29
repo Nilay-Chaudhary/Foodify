@@ -8,7 +8,7 @@ export default function Home() {
 
 
   const loadData = async () => {
-    let response = await fetch("http://localhost:4000/api/v1/fooddata", {
+    let response = await fetch("https://quick-bite-backend.vercel.app/api/v1/fooddata", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

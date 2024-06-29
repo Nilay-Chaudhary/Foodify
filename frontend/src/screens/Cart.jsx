@@ -17,7 +17,7 @@ export default function Cart() {
     const checkOutHandler = async () => {
         let userEmail = localStorage.getItem("userEmail");
         let orderDate = new Date().toString().split("GMT")[0].slice(0,-4);
-        let response = await fetch("http://localhost:4000/api/v1/orderData", {
+        let response = await fetch("https://quick-bite-backend.vercel.app/api/v1/orderData", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
