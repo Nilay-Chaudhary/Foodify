@@ -28,7 +28,7 @@ export default function MyOrder() {
 
             <div className='container'>
                 <div className='row'>
-                    {console.log(orderData)}
+                    {/* {console.log(orderData)} */}
                     {Object.keys(orderData).length != 0 ? Array(orderData).map(data => {
                         return (
                             data.orderData ?
